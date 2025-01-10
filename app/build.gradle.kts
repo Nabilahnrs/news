@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.example.newsportalgroup"
     compileSdk = 34
-
+//ign
     defaultConfig {
         applicationId = "com.example.newsportalgroup"
         minSdk = 24
