@@ -7,14 +7,20 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class PagerAdapter extends FragmentStateAdapter{
+public class PagerAdapter extends FragmentPagerAdapter{
+
+    int tabcount;
+    public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
+        super(fm,behavior);
+        tabcount=behavior;
+    }
 
     public PagerAdapter(@NonNull FragmentActivity fragmentActivity) {
-        super(fragmentActivity);
+        super(fragmentActivity.getSupportFragmentManager());
     }
 
     @NonNull
-    @Override
+//    @Override
     public Fragment createFragment(int position) {
         switch(position){
             case 0:
@@ -27,8 +33,19 @@ public class PagerAdapter extends FragmentStateAdapter{
         }
     }
 
-    @Override
+//    @Override
     public int getItemCount() {
         return 2;
+    }
+
+    @NonNull
+    @Override
+    public Fragment getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public int getCount() {
+        return tabcount;
     }
 }

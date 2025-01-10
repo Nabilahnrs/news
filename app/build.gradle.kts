@@ -40,5 +40,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+//    implementation(com.github.bumptech.glide:glide:4.16.0)
+//    implementation(com.squareup.retrofit2:retrofit:2.9.0)
+//    implementation(com.squareup.retrofit:converter-gson:2.9.0)
 //    implementation 'com.github.KwabenBerko:News-API-Java:1.0.2'
 }

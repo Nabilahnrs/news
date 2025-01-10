@@ -11,11 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FragmentDashboard#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class FragmentDashboard extends Fragment {
     private Button buttonfm, buttonan, buttonsv, buttonhm;
     ImageView imageView;
@@ -75,5 +71,4 @@ public class FragmentDashboard extends Fragment {
 //            transaction.commit();
         }
 
-    }
-}
+
